@@ -1,0 +1,92 @@
+.timerMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.morning {
+    background: url('../assets/morningDeskTop.jpg') no-repeat;
+}
+
+.afternoon {
+    background: url('../assets/afterNoonDeskTop.jpg') no-repeat;   
+}
+
+.evening {
+    background: url('../assets/eveningDesktop.jpg') no-repeat;
+}
+
+.night {
+    background: url('../assets/night.jpg') no-repeat;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+}
+
+.timerBox {
+    /* backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125); */
+
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.message {
+    color: #2a335a;
+    font-size: 2rem;
+    margin: 0 !important;
+}
+
+.timerContent {
+    color: #2a335a;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.dateContent {
+    color: #2a335a;
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .timerMain {
+        width: auto;
+        padding: 0 10px !important;
+    }
+    .timerBox {
+        width: 100%;
+    }
+    .morning {
+        background: url('../assets/morningMobile.jpg') no-repeat;
+    }
+    .afternoon {
+        background: url('../assets/afterNoonMobile.jpg') no-repeat;
+    }
+    .evening {
+        background: url('../assets/eveningMobile.jpg') no-repeat;
+    }
+}
